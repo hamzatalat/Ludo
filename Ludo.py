@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
+# In[4]:
 
 
 import tkinter as tk
@@ -203,8 +203,8 @@ class Ludo(tk.Frame):
         playerCan = tk.Canvas(frame, width = 50, height = 50, bg = self.color)
         playerCan.grid(row = 0, column = 0, sticky = 'nw')
         
-        rollLabel = tk.Label(frame, text = 'You rolled a ' + str(self.die)).grid(row = 1,column = 0, sticky = 'nw')
-        rollDie = tk.Button(frame, text = 'Roll die', command = self.roll_die).grid(row = 2,column = 0, sticky = 'we')
+        tk.Label(frame, text = 'You rolled a ' + str(self.die)).grid(row = 1,column = 0, sticky = 'nw')
+        tk.Button(frame, text = 'Roll die', command = self.roll_die).grid(row = 2,column = 0, sticky = 'we')
 
 
         
